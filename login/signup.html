@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Sign UP</title>
+    <link rel="stylesheet" href="signupStyle.css">
+</head>
+<body>
+    <div class="navbar1">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Coding Quizzes</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active" id="home"><a href="../index.html">HOME</a></li>
+                  <!-- <li id="q1"><a >HTML Quiz</a></li>
+                  <li id="q2"><a >CSS Quiz</a></li>
+                  <li id="q3"><a >JS Quiz</a></li> -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <!-- <li><a  id="signUpNavbar"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+                  <li><a  id="logInNavbar"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <!-- <li><a  id="logOutNavbar"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li> -->
+
+                </ul>
+              </div>
+            </div>
+          </nav> 
+        </div>
+    <div class="continar">
+      
+        <div class="right">
+            <div class="wrapper two">
+                <div class="neon">
+                    <h1 class="lefttext">Sign Up</h1>
+                </div>
+            </div>
+            <form onsubmit="StoreData()">     <!-- call function to do somthing whrn sbimt the form  -->
+                <input id="Name" type="text" placeholder="User name" value="">
+                <div id="nameerror" class="errorMessage"></div>
+                <input id="Email" type="text" placeholder="Email" value="">
+                <div id="emailerror" class="errorMessage"></div>
+                <input id="Password" type="password" placeholder="Password" value="">
+                <div id="passworderror" class="errorMessage"></div>
+                <input id="Confirm" type="password" placeholder="Confirm password" value="">
+                <div id="confirmerror" class="errorMessage"></div>
+                <!-- <input id="Phone" type="text" placeholder="Phone number" value="">
+                <div id="phoneerror"></div> -->
+                <div><a class="have_account" href="login.html">Already have account</a></div>
+                <!-- <input id="checked" class="check" type="checkbox"> 
+                <span>Policy&Term</span> -->
+                <div id="checkerror" class="errorMessage"></div>
+                <button id="signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer1">@2023 Quiz Website</div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

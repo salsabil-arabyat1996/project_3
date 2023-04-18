@@ -1,0 +1,63 @@
+.continar
+{
+    display: flex;
+    width: 100%;
+}
+
+.right
+{
+    width: 100%;
+    height: 1000px;
+    background: #0ba7ea1d;
+}
+
+input
+{
+    display: block;
+    margin:auto;
+    width: 40%;
+    height: 40px;
+    /* border: none; */
+}
+button
+{
+    display: block;
+    margin: auto;
+    width: 35%;
+    height: 35px;
+    /* background: linear-gradient(#e66465, #9198e5); */
+    /* background-color:#C971EF ; */
+    background:linear-gradient(to right,#29bcfc,#6391f3,#0fc2f4) ;
+    border: none;
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.lefttext
+{
+text-align: center;
+font-size: 50px;
+font-family: "Lucida Calligraphy";
+}
+.check
+{
+    display: inline;
+    width: 70px;
+    height: 20px;
+    margin-left: 30%;
+
+margin-top: 10px;
+margin-bottom: 10px;
+}
+form div
+{
+    margin-left: 250px;
+}
+.right-button:hover
+{
+    background-color: #F06F9B;
+    border: black;
+}
+
